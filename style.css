@@ -1,0 +1,402 @@
+@font-face {
+  font-family: nb;
+  src: url("./assets/NBInternationalProBoo\ \(1\).ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "rejouice headline";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  overflow: hidden;
+}
+.cursor {
+  height: 7.5vw;
+  width: 7.5vw;
+  background-color: #ff5f38;
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+.cursor h5 {
+  font-size: 400;
+  font-size: 1.2vw;
+}
+.page1 video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  z-index: 5;
+}
+.page1-starting {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 15;
+  background-color: black;
+}
+.page1-starting h3 {
+  font-size: 2vw;
+  color: #fff;
+  font-weight: 300;
+}
+.page1-starting h3 h6 {
+  font-size: 1vw;
+  font-weight: 300;
+}
+.page1-content {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5vw;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.page1-content nav {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5vw 3vw;
+  font-family: "rejouice headline";
+}
+nav h3 {
+  font-size: 1.8vw;
+  font-weight: 400;
+}
+nav h4 {
+  font-size: 1.4vw;
+  font-weight: 200;
+  margin-right: 2vw;
+}
+.page1-content h1 {
+  font-size: 24vw;
+  line-height: 20vw;
+  font-weight: 100;
+}
+.page2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  padding: 2vw 5vw;
+}
+.content1 {
+  margin-top: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "rejouice headline";
+  overflow-y: hidden;
+}
+.content1 h3 {
+  font-size: 1.8vw;
+  font-weight: 100;
+}
+hr {
+  margin-top: 1.3vw;
+  width: 0;
+}
+.content2 {
+  overflow: hidden;
+}
+.content2 h4 {
+  margin-top: 0.6vw;
+  font-family: "rejouice headline";
+  font-size: 4vw;
+  font-weight: 100;
+}
+.page3 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page3-content1 {
+  gap: 0.3vw;
+  display: flex;
+  overflow: hidden;
+}
+.page3-content1 p {
+  font-weight: 100;
+  padding: 0.2vw 0.4vw;
+  color: #1e1d1d;
+}
+.p2 {
+  font-family: "rejouice headline";
+  background-color: #000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 1vw;
+  font-weight: 100;
+}
+.p3 {
+  font-size: 1vw;
+}
+.page3-content2 h3 {
+  font-size: 3.8vw;
+  font-family: "Courier New', Courier, monospace";
+  font-weight: 100;
+  text-decoration: underline;
+  padding: 0.2vw 1vw;
+  color: #000;
+}
+.page4 {
+  height: 100vh;
+  width: 100vw;
+  padding: 2vw 5vw;
+  background-color: #fff;
+}
+
+.page4-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page4-content1 h3 {
+  font-size: 1.8vw;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page4-content1 h4 {
+  font-size: 1.8vw;
+  font-weight: 100;
+}
+
+.page4-content2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  height: 90%;
+  width: 30%;
+  position: relative;
+}
+
+.card div img {
+  position: absolute;
+  top: 85%;
+  left: 22%;
+  height: 2.3vw;
+  width: 11.8vw;
+  object-fit: cover;
+  z-index: 20;
+  color: #fff;
+}
+
+.card video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+.page5 {
+  height: 100vh;
+  width: 100vw;
+  padding: 2vw 5vw;
+  background-color: #fff;
+}
+.page5-content1 {
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "rejouice headline";
+  overflow-y: hidden;
+}
+.page5-content1 h3 {
+  font-size: 1.8vw;
+  font-weight: 100;
+}
+.page5 hr {
+  margin-top: 1.3vw;
+  width: 0;
+}
+.page5-content2 {
+  overflow: hidden;
+}
+.page5-content2 h4 {
+  margin-top: 0.6vw;
+  font-family: "rejouice headline";
+  font-size: 4vw;
+  font-weight: 100;
+}
+.page6 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+}
+
+.page6 video {
+  height: 100%;
+}
+
+.page6 svg {
+  position: absolute;
+  height: 60%;
+}
+.page7 {
+  height: 100vh;
+  width: 100vw;
+  padding: 2vw 5vw;
+  background-color: #fff;
+}
+.page7-content1 {
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "rejouice headline";
+  overflow-y: hidden;
+}
+.page7-content1 h3 {
+  font-size: 1.8vw;
+  font-weight: 100;
+}
+.page7 hr {
+  margin-top: 1.3vw;
+  width: 0;
+}
+.page7-content2 {
+  overflow: hidden;
+}
+.page7-content2 h4 {
+  margin-top: 0.6vw;
+  font-family: "rejouice headline";
+  font-size: 4vw;
+  font-weight: 100;
+}
+.page8 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+.page8-content1 {
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page8-content1 h2 {
+  font-size: 9vw;
+  font-weight: 300;
+}
+.page8 hr{
+  padding-bottom: 8vw;
+}
+.page8-content1 h5 {
+  padding-top: 12vw;
+  font-size: 2.5vw;
+  font-weight: 100;
+}
+
+.page8-content2 {
+  width: 100vw;
+  display: flex;
+  align-items: end;
+}
+
+.image-container {
+  height: 23vh;
+  display: flex;
+  align-items: end;
+  gap: 0.5vw; 
+}
+
+.page8-content2 img {
+  margin-left: 1vw;
+  width: 23.5vw;
+  object-fit: cover;
+  position: relative;
+  z-index: 3;
+}
+.page9 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative;
+}
+
+.page9 h5 {
+  font-size: 1.3vw;
+  font-weight: 100;
+}
+
+.page9 h3 {
+  font-family: nb;
+  font-weight: 600;
+  font-size: 5vw;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.underline-svg {
+  position: absolute;
+  top: 58%;
+  width: 23%;
+  left: 38%;
+}
+
+.circle-svg {
+  position: absolute;
+  top: 54%; 
+  width: 23%;
+  left: 35.4%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
