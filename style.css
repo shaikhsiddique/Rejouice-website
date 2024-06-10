@@ -354,6 +354,7 @@ hr {
 }
 
 .page8-content2 img {
+  cursor: pointer;
   margin-left: 1vw;
   width: 23.5vw;
   object-fit: cover;
@@ -383,20 +384,77 @@ hr {
   letter-spacing: 2px;
   cursor: pointer;
   position: relative;
+  text-decoration: underline;
 }
-
-.underline-svg {
-  position: absolute;
-  top: 58%;
-  width: 23%;
-  left: 38%;
+footer{
+  width: 100vw;
+  background: black;
+  color: #fffcf1;
 }
-
-.circle-svg {
-  position: absolute;
-  top: 54%; 
-  width: 23%;
-  left: 35.4%;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+.footer-content1{
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw 3vw;
+  font-family: nb;
+}
+.part1{
+  width: 20vw;
+}
+.part1 h3{
+  font-size: 1.7vw;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.part1 button{
+  margin-top: 2vw;
+  padding: 1.2vw 2.2vw;
+  margin-bottom: 10vw;
+  font-size: 1.1vw;
+  border-radius: 30px;
+  border: 1px solid #fffcf1;
+  color: #fffcf1;
+  background-color: #1e1d1d;
+}
+.part2{
+  display: flex;
+  justify-content: space-between;
+}
+.part2-a p{
+  font-size: 1.1vw;
+  padding-top: 3px;
+}
+.part2-b{
+  font-size: 1.2vw;
+  padding-top: 3px;
+  margin-left: 6vw;
+}
+.part3{
+  padding: 0 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content2{
+  height: 70vh;
+}
+.part3-a p{
+  font-size: 1.1vw;
+  padding-top: 3px;
+  font-family: nb;
+}
+.part3-b{
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+.part4{
+  padding: 0 3vw;
+}
+.part4 h2{
+  font-family: "rejouice headline";
+  text-align: center;
+  font-size: 28vw;
+  padding-bottom: 3vw !important;
+  font-weight: 100;
+  letter-spacing: 1px;
 }

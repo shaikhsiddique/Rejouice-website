@@ -361,49 +361,101 @@ document.addEventListener("DOMContentLoaded", () => {
       repeat: -1,
     });
   };
-    const page9Animation = () => {
-      const underlineAnimation = document.querySelector(".underline-animation");
-      const circleSvg = document.querySelector(".circle-svg");
-
-      underlineAnimation.addEventListener("mouseenter", () => {
-      const t1 = gsap.timeline();
-       t1.to(circleSvg,{
-        visibility: "visible",
-        opacity: 1,
-       })
-       t1.to(circleSvg,{
-        left: "58%",
-        duration : 1.4,
-       })
-       t1.to(circleSvg,{
-        opacity: 0,
-       })
-       t1.to(circleSvg,{
-        visibility: "hidden" ,
-        left: "35.4%",
-       })
-      });
-  
-      underlineAnimation.addEventListener("mouseleave", () => {
-        const t1 = gsap.timeline();
-        t1.to(circleSvg,{
-          visibility: "visible",
-          opacity: 1,
-         })
-         t1.to(circleSvg,{
-          left: "58%",
-          duration : 1.4,
-         })
-         t1.to(circleSvg,{
-          opacity: 0,
-         })
-         t1.to(circleSvg,{
-          visibility: "hidden" ,
-          left: "35.4%",
-         })
-      });
-    };
     
+  const page9Animation = () => {
+    gsap.from(".page9 h5", {
+      y: -120,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".page9 h5",
+        scroller: ".main",
+        start: "top 58%",
+        end: "bottom 68%",
+        scrub: 2,
+        
+      },
+    });
+    gsap.from(".page9 h3", {
+      y: 120,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".page9 h3",
+        scroller: ".main",
+        start: "top 68%",
+        end: "bottom 78%",
+        scrub: 2,
+      },
+    });
+  }
+  
+  const footerAnimation = ()=>{
+      
+    gsap.from("#footer", {
+      y: -200,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".page9 ",
+        scroller: ".main",
+        start: "top 90%",
+        end: "bottom 1%",
+        scrub: 2,
+       
+        
+      },
+    });
+
+    gsap.from(".footer-content1", {
+      y: 120,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".footer-content1",
+        scroller: ".main",
+        start: "top 20%",
+        end: "bottom 45%",
+        scrub: 2,
+    
+        
+      },
+    });
+
+    gsap.from(".part3", {
+      y: 120,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".footer-content2",
+        scroller: ".main",
+        start: "top 20%",
+        end: "bottom 45%",
+        scrub: 2,
+       
+        
+      },
+    });
+    gsap.from(".part4", {
+      y: 120,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".footer-content2",
+        scroller: ".main",
+        start: "top 20%",
+        end: "bottom 90%",
+        scrub: 2,
+      },
+    });
+    
+  }
   page1Animation();
   page2Animation();
   page3Animation();
@@ -412,4 +464,5 @@ document.addEventListener("DOMContentLoaded", () => {
   page7Animation();
   page8Animation();
   page9Animation();
+  footerAnimation();
 });
